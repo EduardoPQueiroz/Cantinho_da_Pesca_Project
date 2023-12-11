@@ -1,25 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');*/
+*{
+    margin: 0;
+    padding: 0px;
+    font-family:  'Montserrat', sans-serif;
+}
+
 body{
     padding: 0%;
     margin: 0px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 /* inicio navbar */
+#body{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    flex: 1 1 0;
+    min-height: 100vh;
+}
+
 #navBar{
     background-color: #274d85;
-    padding: 0%;
-    padding: 10px;
-    display: flex;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr;
     align-items: center;
 }
 
-#imgLogo{
+.part{
+    flex: 1;
     display: flex;
-    width: 100px;
-    align-content: center;
-    justify-content: center;
-    margin-right: 349px;
+}
+
+#imgLogo{
     margin-left: 20px;
 }
 
@@ -29,33 +44,20 @@ body{
 }
 
 #searchbar{
-display: flex;
-width: 1000px;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 #lupa{
     width: 60px;
     height: 60px;
-    display: flex;
-
 }
 
 #inputSearch{
-    width: 369px;
-    height: 59px;
     border-radius: 15px;
-    display: flex;
     background-color: #d9d9d9;
-    padding: 8px;
     border: #d9d9d9;
-    font-size: 30px;
-}
-
-.container-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 25px;
 }
 
 .barraPesquisa{
@@ -63,12 +65,12 @@ align-items: center;
     background-color: #d9d9d9;
     border-radius: 15px;
     align-items: center;
+    justify-content: center;
 }
 
 #textNav{
     font-family: 'Montserrat', sans-serif;
     display: flex;
-    margin-left: 300px;
     align-items: center;
 }
 
@@ -101,6 +103,10 @@ align-items: center;
 }
 /* fim content */
 /* inicio products(home) */
+.word{
+    font-family:  'Montserrat', sans-serif;
+}
+
 #products_container{
     background-color: #274d85;
     display: grid;
@@ -122,11 +128,152 @@ align-items: center;
     justify-content: center;
     align-items: center;
 }
+
+.img_homepage{
+    width: 10em;
+}
 /* fim products(home) */
 /* footer */
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #274d85;
+    font-family:  'Montserrat', sans-serif;
 }
 /* fim do footer */
+/* inicio products page*/
+
+#main{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+#tpProd{
+    display: flex;
+    justify-content: center ;
+    background-color: #fff;
+}
+
+#imgboia{
+    height: 131px;
+    width: 264px;
+    margin: 0%;
+}
+
+#imgvara{
+    width: 177px;
+    height: 237px;
+}
+
+#imganzois{
+    width: 199px;
+    height: 192px;
+}
+
+#main #tpProd div{
+    background-color: #d9d9d9;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    justify-content: center;
+    width: 300px;
+    height: 306px;
+}
+
+#main #tpProd div p{
+    font-size: 30px;
+    font-family:  'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+#ptbaixo{
+    background-color: #274d85;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#ptbaixo div{
+    /*padding: 20px;*/
+    margin: 20px;
+    background-color: #fff;
+    width: 296px;
+    height: 361px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#ptbaixo div img{
+    width: 225px;
+    height: 225px;
+}
+
+#ptbaixo div p{
+    background-color: #274d85;
+    padding: 10px;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+/*fim products page*/
+/*inicio shopping cart*/
+#main-shoppingCart{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.img-carrinho{
+    padding: 15px;
+    margin: 10px;
+    background-color: #d9d9d9;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 50px;
+}
+
+#boia-carrinho{
+    width: 264px;
+    height: 131px;
+}
+
+#vara-carrinho{
+    width: 250px;
+    height: 180px;
+}
+
+.bang-prod{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.preco-carrinho{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #d9d9d9;
+    padding: 5px;
+    margin: 3px;
+    font-size: 31px;
+}
+
+.desc-prod{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #d9d9d9;
+    padding: 5px;
+    margin: 3px;
+    font-size: 27px;
+}
+
+.div-carrinho-prod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*fim shopping cart*/
+

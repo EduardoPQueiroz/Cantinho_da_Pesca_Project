@@ -3,28 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products Page</title>
+    <title>Produtos</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100;1,300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body">
     <nav id="navBar">
-        <img src="" alt="logo_peixe" id="logo">
-        <div id="searchbar">
-            <input type="text" id="inputSearch">
-            <img src="" id="lupa" alt="lupa">
+        
+        <div class="part">
+            <div id="imgLogo">
+                <img id="logo" src="img/logo.png" alt="logo_peixe" id="logo">
+            </div>
         </div>
-        <a class="pagelink" href="index.html">HOME</a>
-        <a class="pagelink" href="productsPage.html">PRODUTOS</a>
-        <a id="shoppingcart" class="pagelink" href="shoppingCart.html"><img src="" alt="imagem_carrinho"></a>
+        
+        <div class="part">
+            <div id="searchbar">
+                <div>
+                    <div class="barraPesquisa">
+                        <input type="text" id="inputSearch">
+                        <img src="img/lupa.png" id="lupa" alt="lupa">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="part">
+            <div id="textNav">
+                <a class="pagelink" href="index.html">HOME</a>
+                <a class="pagelink" href="productsPage.html">PRODUTOS</a>
+                <a id="shoppingcart" class="pagelink" href="shoppingCart.html"><img src="img/carrinho.png"alt="imagem_carrinho" id="imgCarrinho"></a>
+            </div>
+        </div>
     </nav>
-    <div id="tipoProdutosDiv">
-        <a><img src="" alt="img boias">BOIAS</a><BR>
-        <a><img src="" alt="img varas">VARAS</a><BR>
-        <a><img src="" alt="img anzóis">ANZÓIS</a>
-    </div>
-    <div id="produtosDiv">
+    <main id="main">
+        <div id="tpProd">
 
-    </div>
+            <div>
+                <img src="img/boia.png" alt="boias" id="imgboia">
+                <p>BOIAS</p>
+            </div>
+
+            <div>
+                <img src="img/vara.png" alt="vara" id="imgvara">
+                <p>VARAS</p>
+            </div>
+
+            <div>
+                <img src="img/anzois.png" alt="anzois" id="imganzois">
+                <p>ANZÓIS</p>
+            </div>
+
+        </div>
+
+        <div id="ptbaixo">
+
+            <div>
+                <img src="img/varaTechblazer.png" alt="">
+                <p>VARA TECHBLAZER</p>
+            </div>
+
+            <div>
+                <img src="img/varaBreakmen.png" alt="">
+                <p>VARA BREAKMEN</p>
+            </div>
+
+            <div>
+                <img src="img/varaAlbatroz.png" alt="">
+                <p>VARA ALBATROZ</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>cantinho da pesca®</p>
+    </footer>
 </body>
 </html>
