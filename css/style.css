@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+body{
+    padding: 0%;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* inicio navbar */
+#navBar{
+    background-color: #274d85;
+    padding: 0%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#imgLogo{
+    display: flex;
+    width: 100px;
+    align-content: center;
+    justify-content: center;
+    margin-right: 349px;
+    margin-left: 20px;
+}
+
+#logo{
+    width: 120px;
+    height: 120px;
+}
+
+#searchbar{
+display: flex;
+width: 1000px;
+align-items: center;
+}
+
+#lupa{
+    width: 60px;
+    height: 60px;
+    display: flex;
+
+}
+
+#inputSearch{
+    width: 369px;
+    height: 59px;
+    border-radius: 15px;
+    display: flex;
+    background-color: #d9d9d9;
+    padding: 8px;
+    border: #d9d9d9;
+    font-size: 30px;
+}
+
+.container-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barraPesquisa{
+    display: flex;
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    align-items: center;
+}
+
+#textNav{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin-left: 300px;
+    align-items: center;
+}
+
+#imgCarrinho{
+    width: 80px;
+    margin: 0%;
+}
+
+.pagelink{
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+}
+/* fim navbar */
+/* inicio content */
+#content-container{
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+#title_container h1{
+    font-size: 4em;
+    margin: 1em;
+}
+#contact_us_container{
+    background-color: #274d85;
+    padding: 0.4em;
+}
+/* fim content */
+/* inicio products(home) */
+#products_container{
+    background-color: #274d85;
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr 1fr;
+}
+.product_title{
+    background-color: #d9d9d9;
+    padding: 0.5em 2em;
+    margin: 1em 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product_img{
+    padding: 0.5em 2em;
+    background-color: #d9d9d9;
+    margin: 1em 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* fim products(home) */
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* fim do footer */
